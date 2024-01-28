@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root{
+            --side-width: 300px;
+            --dark-border: 2px solid black;
+            --main-color:slateblue;
+            --border-color: black;
+            --backgroudn-color:green;
+        
+        }
+        h1{
+            color: var(--main-color);
+            clear: both;
+        }
+        h2{
+            border: 2px solid var(--border-color);
+            color: var(--main-color);
+        }
+        p{
+            background-color: var(--backgroudn-color);
+        }
+        footer{
+            border:var(--dark-border);
+        }
+        .side-nav, .blogs{
+            float: left;
+        }
+        aside{
+            background-color: springgreen;
+            width: var(--side-width);
+        }
+        .blogs{
+            background-color: blueviolet;
+            width: calc(100% - var(--side-width));
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <aside class="side-nav">
+            My Side Nagivation
+        </aside>
+        <div class="blogs">
+            <h4>
+                Blogs
+            </h4>
+        </div>
+    </section>
+    <h1>I am exploring custom properties</h1>
+    <p>welcome to my website</p>
+    <h2>I am exploring custom properties</h2>
+    <p>welcome to my website</p>
+    
+    <footer>
+        <h3>Alright Reserved by Aowshad</h3>
+    </footer>
+    
+</body>
+</html>
